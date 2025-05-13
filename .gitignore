@@ -1,0 +1,31 @@
+# Dataset và ảnh huấn luyện
+fruits-360/
+*.jpg
+*.png
+
+# Notebook và các file tạm
+*.ipynb
+*.log
+*.csv
+*.npy
+*.npz
+
+# File huấn luyện, không cần khi chỉ deploy
+train.py
+test.py
+mobilenetv2_training_plot.png
+
+# HTML tĩnh nếu không dùng
+index.html
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Hệ thống
+.DS_Store
+.env
+.vscode/
+.idea/
