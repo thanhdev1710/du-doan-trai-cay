@@ -42,8 +42,11 @@ def load_model():
 model = load_model()
 
 # ==== Predict Function ====
-def predict_image(image_path):
-    image = Image.open(image_path).convert('RGB')
+def predict_image(image: Image.Image):
+    """
+    Nhận ảnh PIL.Image, xử lý và trả về tên lớp dự đoán
+    """
+    image = image.convert('RGB')  # đảm bảo là ảnh RGB
     image = transform(image).unsqueeze(0).to(DEVICE)
 
     with torch.no_grad():
