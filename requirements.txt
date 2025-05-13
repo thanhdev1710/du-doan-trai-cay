@@ -1,8 +1,5 @@
-torch
-torchvision
-numpy
-scikit-learn
-matplotlib
-flask
-flask-cors
-Pillow
+Flask==2.3.3
+flask-cors==4.0.0
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+Pillow==10.2.0
