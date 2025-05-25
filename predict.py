@@ -1,3 +1,4 @@
+import os
 import torch
 import torch.nn as nn
 from torchvision import transforms, models
@@ -7,24 +8,27 @@ from PIL import Image
 # ==== Config ====
 MODEL_PATH = 'mobilenetv2_best.pth'
 CLASS_NAMES_PATH = 'class_names.txt'
-INPUT_SIZE = (96, 96)
+INPUT_RESIZE = (96, 96)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # ==== Load class names ====
+if not os.path.exists(CLASS_NAMES_PATH):
+    raise FileNotFoundError(f"File '{CLASS_NAMES_PATH}' not found.")
 with open(CLASS_NAMES_PATH, 'r') as f:
     class_names = [line.strip() for line in f.readlines()]
 
-# ==== Transform ====
+# ==== Define transforms ====
 transform = transforms.Compose([
-    transforms.Resize(INPUT_SIZE),
+    transforms.Resize(INPUT_RESIZE),
     transforms.ToTensor(),
     transforms.Normalize([0.485, 0.456, 0.406],
                          [0.229, 0.224, 0.225])
 ])
 
-# ==== Model ====
-def load_model():
-    model = models.mobilenet_v2(weights=MobileNet_V2_Weights.IMAGENET1K_V1)
+# ==== Build model ====
+def build_model(num_classes):
+    weights = MobileNet_V2_Weights.IMAGENET1K_V1
+    model = models.mobilenet_v2(weights=weights)
     for param in model.features.parameters():
         param.requires_grad = False
     model.classifier = nn.Sequential(
@@ -32,25 +36,33 @@ def load_model():
         nn.Linear(model.last_channel, 256),
         nn.ReLU(),
         nn.Dropout(0.2),
-        nn.Linear(256, len(class_names))
+        nn.Linear(256, num_classes)
     )
-    model.load_state_dict(torch.load(MODEL_PATH, map_location=DEVICE))
-    model.to(DEVICE)
-    model.eval()
     return model
 
-model = load_model()
+model = build_model(num_classes=len(class_names))
+model.load_state_dict(torch.load(MODEL_PATH, map_location=DEVICE))
+model = model.to(DEVICE)
+model.eval()
 
-# ==== Predict Function ====
-def predict_image(image: Image.Image):
-    """
-    Nhận ảnh PIL.Image, xử lý và trả về tên lớp dự đoán
-    """
-    image = image.convert('RGB')  # đảm bảo là ảnh RGB
-    image = transform(image).unsqueeze(0).to(DEVICE)
+# ==== Predict function ====
+def predict_image(image_path):
+    if not os.path.exists(image_path):
+        raise FileNotFoundError(f"Image '{image_path}' not found.")
+    
+    image = Image.open(image_path).convert('RGB')
+    input_tensor = transform(image).unsqueeze(0).to(DEVICE)
 
     with torch.no_grad():
-        outputs = model(image)
-        _, predicted = torch.max(outputs, 1)
-        class_idx = predicted.item()
-        return class_names[class_idx]
+        outputs = model(input_tensor)
+        _, predicted_idx = torch.max(outputs, 1)
+        predicted_label = class_names[predicted_idx.item()]
+        probabilities = torch.nn.functional.softmax(outputs[0], dim=0)
+    
+    return predicted_label, probabilities[predicted_idx.item()].item()
+
+# ==== Example usage ====
+if __name__ == '__main__':
+    image_path = "./dataset_original/train/Cocos 1/r_8_100.jpg"
+    label, confidence = predict_image(image_path)
+    print(f"✅ Prediction: {label} ({confidence:.2%} confidence)")

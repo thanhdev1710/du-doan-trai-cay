@@ -1,0 +1,378 @@
+============================================================
+🚀 STARTING TRAINING PROCESS 🚀
+============================================================
+Device: cuda
+Epochs: 20, Batch Size: 64
+Learning Rate: 0.0001, Weight Decay: 1e-05
+Early Stopping Patience: 5
+LR Scheduler Patience: 3
+Model will be saved to: mobilenetv2_best.pth
+Training samples: 80665, Validation samples: 20247
+Number of classes: 196
+============================================================
+Model will be saved to: mobilenetv2_best.pth
+Training samples: 80665, Validation samples: 20247
+Number of classes: 196
+============================================================
+
+📅 Epoch 1/20 | Current LR: 1.0e-04
+------------------------------------------------------------
+✅ Epoch 1 Summary (took 223.89s):
+  Train Loss: 3.3668 | Train Acc: 0.2946
+  Val   Loss: 2.1905 | Val   Acc: 0.5891
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 2.1905)
+============================================================
+📅 Epoch 2/20 | Current LR: 1.0e-04
+------------------------------------------------------------
+✅ Epoch 2 Summary (took 200.23s):
+  Train Loss: 1.8149 | Train Acc: 0.5383
+  Val   Loss: 1.5274 | Val   Acc: 0.6846
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 1.5274)
+============================================================
+📅 Epoch 3/20 | Current LR: 1.0e-04
+------------------------------------------------------------
+✅ Epoch 3 Summary (took 132.68s):
+  Train Loss: 1.4364 | Train Acc: 0.6120
+  Val   Loss: 1.3286 | Val   Acc: 0.7076
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 1.3286)
+============================================================
+📅 Epoch 4/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 4 Summary (took 126.13s):
+  Train Loss: 1.2439 | Train Acc: 0.6544
+  Val   Loss: 1.1690 | Val   Acc: 0.7222
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 1.1690)
+============================================================
+📅 Epoch 5/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 5 Summary (took 126.37s):
+  Train Loss: 1.1440 | Train Acc: 0.6756
+  Val   Loss: 1.0844 | Val   Acc: 0.7428
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 1.0844)
+============================================================
+📅 Epoch 6/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 6 Summary (took 128.70s):
+  Train Loss: 1.0719 | Train Acc: 0.6919
+  Val   Loss: 1.0364 | Val   Acc: 0.7543
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 1.0364)
+============================================================
+📅 Epoch 7/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 7 Summary (took 126.77s):
+  Train Loss: 1.0249 | Train Acc: 0.7035
+  Val   Loss: 0.9991 | Val   Acc: 0.7636
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.9991)
+============================================================
+📅 Epoch 8/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 8 Summary (took 127.89s):
+  Train Loss: 0.9709 | Train Acc: 0.7186
+  Val   Loss: 0.9573 | Val   Acc: 0.7610
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.9573)
+============================================================
+📅 Epoch 9/20 | Current LR: 1.0e-04
+------------------------------------------------------------
+✅ Epoch 9 Summary (took 125.84s):
+  Train Loss: 0.9438 | Train Acc: 0.7232
+  Val   Loss: 0.9386 | Val   Acc: 0.7609
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.9386)
+============================================================
+📅 Epoch 10/20 | Current LR: 1.0e-04
+------------------------------------------------------------
+✅ Epoch 10 Summary (took 129.83s):
+  Train Loss: 0.9129 | Train Acc: 0.7324
+  Val   Loss: 0.8027 | Val   Acc: 0.7889
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.8027)
+============================================================
+📅 Epoch 11/20 | Current LR: 1.0e-04
+------------------------------------------------------------
+✅ Epoch 11 Summary (took 124.86s):
+  Train Loss: 0.8878 | Train Acc: 0.7372
+  Val   Loss: 0.8694 | Val   Acc: 0.7740
+  📉 Val loss did not improve for 1 epoch(s). Best: 0.8027
+============================================================
+📅 Epoch 12/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 12 Summary (took 130.69s):
+  Train Loss: 0.8748 | Train Acc: 0.7426
+  Val   Loss: 0.8012 | Val   Acc: 0.7929
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.8012)
+============================================================
+📅 Epoch 13/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 13 Summary (took 127.88s):
+  Train Loss: 0.8603 | Train Acc: 0.7438
+  Val   Loss: 0.8216 | Val   Acc: 0.7824
+  📉 Val loss did not improve for 1 epoch(s). Best: 0.8012
+============================================================
+📅 Epoch 14/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 14 Summary (took 136.15s):
+  Train Loss: 0.8416 | Train Acc: 0.7487
+  Val   Loss: 0.7694 | Val   Acc: 0.7959
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.7694)
+============================================================
+📅 Epoch 15/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 15 Summary (took 125.71s):
+  Train Loss: 0.8313 | Train Acc: 0.7520
+  Val   Loss: 0.6945 | Val   Acc: 0.8197
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.6945)
+============================================================
+📅 Epoch 16/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 16 Summary (took 125.78s):
+  Train Loss: 0.8164 | Train Acc: 0.7552
+  Val   Loss: 0.7413 | Val   Acc: 0.8053
+  📉 Val loss did not improve for 1 epoch(s). Best: 0.6945
+============================================================
+📅 Epoch 17/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 17 Summary (took 125.01s):
+  Train Loss: 0.7974 | Train Acc: 0.7600
+  Val   Loss: 0.7462 | Val   Acc: 0.8106
+  📉 Val loss did not improve for 2 epoch(s). Best: 0.6945
+============================================================
+📅 Epoch 18/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 18 Summary (took 125.16s):
+  Train Loss: 0.7982 | Train Acc: 0.7599
+  Val   Loss: 0.7336 | Val   Acc: 0.8054
+  📉 Val loss did not improve for 3 epoch(s). Best: 0.6945
+============================================================
+📅 Epoch 19/20 | Current LR: 1.0e-04
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 19 Summary (took 125.90s):
+  Train Loss: 0.7877 | Train Acc: 0.7630
+  Val   Loss: 0.7328 | Val   Acc: 0.8097
+  📉 Val loss did not improve for 4 epoch(s). Best: 0.6945
+============================================================
+📅 Epoch 20/20 | Current LR: 5.0e-05
+------------------------------------------------------------                                                                                                                                       
+✅ Epoch 20 Summary (took 125.79s):
+  Train Loss: 0.7719 | Train Acc: 0.7664
+  Val   Loss: 0.6862 | Val   Acc: 0.8195
+  💾 Best model saved to mobilenetv2_best.pth (Val Loss: 0.6862)
+============================================================
+
+🎉 TRAINING COMPLETE! 🎉
+Total training time: 45m 22s
+
+🔄 Loading best model from mobilenetv2_best.pth for final evaluation on test set...
+
+============================================================
+📊 EVALUATING ON TEST SET 📊
+============================================================
+Test Loss: 0.8964 | Test Accuracy: 0.7546 
+Classification Report:
+
+                           precision    recall  f1-score   support
+
+                 Apple 10       0.87      0.42      0.56       231
+                 Apple 11       0.87      0.86      0.87       142
+                 Apple 12       0.95      0.38      0.55       154
+                 Apple 13       0.71      0.79      0.75       235
+                 Apple 14       0.45      0.62      0.52       154
+                 Apple 17       0.73      0.82      0.77       201
+                 Apple 18       0.88      0.81      0.84       160
+                 Apple 19       0.97      1.00      0.98       241
+                  Apple 5       0.69      0.97      0.81       146
+                  Apple 6       0.61      0.97      0.75       157
+                  Apple 7       0.77      0.59      0.67       229
+                  Apple 8       0.77      0.75      0.76       228
+                  Apple 9       0.66      0.82      0.73       231
+         Apple Braeburn 1       0.91      0.65      0.75       164
+             Apple Core 1       0.54      1.00      0.70        78
+     Apple Crimson Snow 1       0.75      0.60      0.67       148
+           Apple Golden 1       0.94      0.99      0.96       160
+           Apple Golden 2       0.59      0.80      0.68       164
+           Apple Golden 3       0.97      0.39      0.56       161
+     Apple Granny Smith 1       0.63      0.85      0.72       164
+        Apple Pink Lady 1       0.58      0.23      0.33       152
+              Apple Red 1       0.51      0.98      0.67       164
+              Apple Red 2       0.50      0.77      0.61       164
+              Apple Red 3       1.00      0.29      0.45       144
+    Apple Red Delicious 1       0.96      0.65      0.77       166
+       Apple Red Yellow 1       0.88      0.91      0.90       164
+       Apple Red Yellow 2       1.00      0.82      0.90       219
+           Apple Rotten 1       0.72      0.98      0.83       162
+              Apple hit 1       0.86      0.65      0.74       234
+             Apple worm 1       0.63      0.83      0.71       231
+                Apricot 1       0.99      0.87      0.93       164
+                Avocado 1       0.95      0.97      0.96       143
+          Avocado Black 1       0.62      1.00      0.76       231
+          Avocado Green 1       0.65      0.78      0.71       231
+           Avocado ripe 1       0.76      0.69      0.72       166
+                 Banana 1       0.34      0.17      0.23       166
+                 Banana 3       0.07      0.01      0.02        77
+     Banana Lady Finger 1       0.43      0.47      0.45       152
+             Banana Red 1       0.35      0.36      0.36       166
+                  Beans 1       0.08      0.10      0.09        77
+               Beetroot 1       0.87      0.57      0.69       150
+            Blackberrie 1       0.74      0.91      0.81       150
+            Blackberrie 2       0.81      0.92      0.86        75
+Blackberrie half rippen 1       0.90      0.75      0.82       150
+ Blackberrie not rippen 1       0.94      0.85      0.89       225
+              Blueberry 1       0.85      0.86      0.86       154
+            Cabbage red 1       0.97      0.71      0.82        49
+          Cabbage white 1       1.00      0.64      0.78        47
+           Cactus fruit 1       0.97      0.69      0.81       166
+     Cactus fruit green 1       0.96      0.86      0.91       231
+       Cactus fruit red 1       1.00      1.00      1.00       237
+              Caju seed 1       0.92      0.84      0.88       100
+             Cantaloupe 1       0.97      1.00      0.98       164
+             Cantaloupe 2       0.99      0.98      0.98       164
+              Carambula 1       0.98      0.71      0.83       166
+                 Carrot 1       0.48      0.60      0.53        50
+            Cauliflower 1       0.90      0.98      0.94       234
+              Cherimoya 1       0.99      0.99      0.99       320
+                 Cherry 1       0.92      1.00      0.96       164
+                 Cherry 2       0.45      0.65      0.53       246
+                 Cherry 3       0.91      0.90      0.90       231
+                 Cherry 4       0.55      0.42      0.48       231
+                 Cherry 5       0.98      0.91      0.94       228
+         Cherry Rainier 1       0.93      0.63      0.75       246
+         Cherry Rainier 2       0.75      0.99      0.85       231
+         Cherry Rainier 3       0.97      0.80      0.88       228
+            Cherry Sour 1       0.61      0.97      0.75       150
+       Cherry Wax Black 1       0.60      0.91      0.73       164
+         Cherry Wax Red 1       0.69      1.00      0.82       164
+         Cherry Wax Red 2       0.93      0.47      0.62       150
+         Cherry Wax Red 3       0.57      0.95      0.71       150
+      Cherry Wax Yellow 1       0.89      0.92      0.91       164
+   Cherry Wax not ripen 1       0.73      0.84      0.78       225
+   Cherry Wax not ripen 2       0.00      0.00      0.00        76
+               Chestnut 1       0.79      0.50      0.62       153
+             Clementine 1       0.93      0.64      0.76       166
+                  Cocos 1       0.79      1.00      0.88       166
+                   Corn 1       0.25      0.47      0.33       150
+              Corn Husk 1       0.79      0.22      0.35       154
+               Cucumber 1       0.12      0.02      0.03        50
+              Cucumber 10       0.59      0.87      0.70       240
+               Cucumber 3       0.00      0.00      0.00        81
+               Cucumber 9       0.24      0.69      0.36       154
+          Cucumber Ripe 1       0.76      0.95      0.85       130
+          Cucumber Ripe 2       0.66      0.90      0.76       156
+                  Dates 1       0.87      0.78      0.83       166
+               Eggplant 1       0.58      0.40      0.47       156
+          Eggplant long 1       0.00      0.00      0.00        80
+                    Fig 1       0.97      0.94      0.96       234
+            Ginger Root 1       0.56      0.89      0.69        99
+             Gooseberry 1       0.65      0.88      0.75       154
+             Granadilla 1       0.73      0.72      0.73       166
+             Grape Blue 1       0.73      1.00      0.84       328
+             Grape Pink 1       0.90      0.99      0.94       164
+            Grape White 1       0.98      1.00      0.99       166
+            Grape White 2       0.89      0.84      0.86       166
+            Grape White 3       0.99      1.00      0.99       164
+            Grape White 4       0.87      0.99      0.93       158
+        Grapefruit Pink 1       0.89      0.96      0.93       166
+       Grapefruit White 1       0.93      0.63      0.75       164
+                  Guava 1       0.96      0.98      0.97       166
+               Hazelnut 1       0.87      0.34      0.49       157
+            Huckleberry 1       0.99      1.00      0.99       166
+                   Kaki 1       1.00      0.54      0.70       166
+                   Kiwi 1       0.84      0.94      0.89       156
+               Kohlrabi 1       0.85      0.62      0.72       157
+               Kumquats 1       0.98      0.78      0.87       166
+                  Lemon 1       0.64      0.71      0.67       164
+            Lemon Meyer 1       0.67      1.00      0.80       166
+                  Limes 1       0.99      0.98      0.99       166
+                 Lychee 1       1.00      0.95      0.97       166
+              Mandarine 1       0.87      0.94      0.90       166
+                  Mango 1       0.93      0.99      0.96       166
+              Mango Red 1       0.68      0.97      0.80       142
+              Mangostan 1       0.61      0.99      0.76       102
+               Maracuja 1       0.84      0.69      0.75       166
+     Melon Piel de Sapo 1       0.98      0.77      0.87       246
+               Mulberry 1       0.90      0.92      0.91       164
+              Nectarine 1       0.71      0.87      0.79       164
+         Nectarine Flat 1       0.92      0.51      0.65       160
+             Nut Forest 1       0.95      0.35      0.51       218
+              Nut Pecan 1       0.45      0.69      0.54       178
+              Onion Red 1       0.47      0.39      0.42       150
+       Onion Red Peeled 1       0.58      0.97      0.72       155
+            Onion White 1       0.69      0.60      0.64       146
+                 Orange 1       0.87      1.00      0.93       160
+                 Papaya 1       0.85      0.95      0.90       164
+          Passion Fruit 1       0.97      0.22      0.35       166
+                  Peach 1       0.97      0.40      0.56       164
+                  Peach 2       1.00      0.91      0.96       246
+             Peach Flat 1       0.98      0.71      0.82       164
+                   Pear 1       0.73      0.54      0.62       164
+                   Pear 2       0.59      0.84      0.70       232
+                   Pear 3       0.53      0.89      0.66        72
+             Pear Abate 1       0.87      0.81      0.84       166
+           Pear Forelle 1       0.68      1.00      0.81       234
+            Pear Kaiser 1       0.67      0.97      0.79       102
+           Pear Monster 1       0.93      0.86      0.89       166
+               Pear Red 1       0.91      0.69      0.79       222
+             Pear Stone 1       0.96      0.84      0.89       237
+          Pear Williams 1       0.81      0.70      0.75       166
+                 Pepino 1       1.00      0.66      0.80       166
+           Pepper Green 1       1.00      0.77      0.87       148
+          Pepper Orange 1       0.15      0.08      0.10       234
+             Pepper Red 1       0.40      0.93      0.56       222
+          Pepper Yellow 1       0.88      0.48      0.62       222
+               Physalis 1       0.96      0.96      0.96       164
+     Physalis with Husk 1       0.62      0.80      0.70       164
+              Pineapple 1       0.87      1.00      0.93       166
+         Pineapple Mini 1       1.00      0.77      0.87       163
+              Pistachio 1       0.83      0.82      0.82       231
+           Pitahaya Red 1       0.92      1.00      0.96       166
+                   Plum 1       1.00      0.98      0.99       151
+                   Plum 2       0.86      0.99      0.92       142
+                   Plum 3       0.96      0.60      0.74       304
+            Pomegranate 1       0.62      0.74      0.67       164
+         Pomelo Sweetie 1       0.93      1.00      0.96       153
+             Potato Red 1       0.88      0.47      0.61       150
+      Potato Red Washed 1       0.94      0.89      0.91       151
+           Potato Sweet 1       0.76      0.59      0.67       150
+           Potato White 1       0.89      0.43      0.58       150
+                 Quince 1       0.76      0.80      0.78       166
+                 Quince 2       0.99      0.66      0.79       240
+                 Quince 3       0.91      0.74      0.82       242
+                 Quince 4       0.90      0.86      0.88       249
+               Rambutan 1       0.79      1.00      0.88       164
+              Raspberry 1       1.00      0.99      1.00       166
+             Redcurrant 1       1.00      0.66      0.79       164
+                  Salak 1       0.40      0.49      0.44       162
+             Strawberry 1       0.76      0.81      0.78       164
+       Strawberry Wedge 1       0.90      0.60      0.72       246
+              Tamarillo 1       0.83      0.99      0.90       166
+                Tangelo 1       0.93      0.72      0.81       166
+                 Tomato 1       0.94      0.69      0.79       246
+                Tomato 10       0.62      0.50      0.56       228
+                 Tomato 2       0.85      0.73      0.79       225
+                 Tomato 3       0.74      0.50      0.60       246
+                 Tomato 4       0.72      0.85      0.78       160
+                 Tomato 5       0.60      0.44      0.51       222
+                 Tomato 7       0.98      0.56      0.71       231
+                 Tomato 8       0.58      0.66      0.62       239
+                 Tomato 9       0.76      0.85      0.80       239
+   Tomato Cherry Maroon 1       0.66      0.61      0.64       100
+   Tomato Cherry Orange 1       0.54      0.72      0.62       100
+      Tomato Cherry Red 1       0.75      0.95      0.84       164
+      Tomato Cherry Red 2       0.73      0.46      0.56       100
+   Tomato Cherry Yellow 1       0.83      0.60      0.70       100
+           Tomato Heart 1       0.54      0.64      0.59       228
+          Tomato Maroon 1       0.98      0.87      0.93       127
+          Tomato Maroon 2       0.64      0.90      0.75       147
+          Tomato Yellow 1       0.46      0.96      0.62       153
+       Tomato not Ripen 1       0.82      0.81      0.82       158
+                 Walnut 1       0.95      1.00      0.97       249
+             Watermelon 1       0.94      1.00      0.97       157
+               Zucchini 1       0.14      0.01      0.02        80
+          Zucchini dark 1       0.00      0.00      0.00        80
+
+                 accuracy                           0.75     33711
+                macro avg       0.76      0.74      0.73     33711
+             weighted avg       0.78      0.75      0.75     33711
+
+============================================================
+
+📈 Plotting Training History...
+📊 Training plots saved to 'mobilenetv2_training_plot.png'
+
+🏁 Script Finished 🏁
