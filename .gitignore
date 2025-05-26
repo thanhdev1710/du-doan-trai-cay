@@ -1,5 +1,6 @@
 # Dataset và ảnh huấn luyện
-fruits-360/
+dataset/
+dataset_original/
 *.jpg
 *.png
 
