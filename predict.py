@@ -46,23 +46,14 @@ model = model.to(DEVICE)
 model.eval()
 
 # ==== Predict function ====
-def predict_image(image_path):
-    if not os.path.exists(image_path):
-        raise FileNotFoundError(f"Image '{image_path}' not found.")
-    
-    image = Image.open(image_path).convert('RGB')
+def predict_image(image, topk=1):
+    image = image.convert('RGB')
     input_tensor = transform(image).unsqueeze(0).to(DEVICE)
 
     with torch.no_grad():
         outputs = model(input_tensor)
-        _, predicted_idx = torch.max(outputs, 1)
-        predicted_label = class_names[predicted_idx.item()]
         probabilities = torch.nn.functional.softmax(outputs[0], dim=0)
-    
-    return predicted_label, probabilities[predicted_idx.item()].item()
+        top_probs, top_idxs = torch.topk(probabilities, k=topk)
 
-# ==== Example usage ====
-if __name__ == '__main__':
-    image_path = "./dataset_original/train/Cocos 1/r_8_100.jpg"
-    label, confidence = predict_image(image_path)
-    print(f"✅ Prediction: {label} ({confidence:.2%} confidence)")
+    results = [(class_names[idx], round(prob.item() * 100, 2)) for prob, idx in zip(top_probs, top_idxs)]
+    return results
