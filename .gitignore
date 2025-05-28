@@ -12,7 +12,6 @@ dataset_original/
 *.npz
 
 # File huấn luyện, không cần khi chỉ deploy
-train.py
 test.py
 mobilenetv2_training_plot.png
 
