@@ -1,0 +1,28 @@
+# Dataset và ảnh huấn luyện
+data/
+dataset_original/
+*.jpg
+*.png
+
+# Notebook và các file tạm
+*.ipynb
+*.log
+*.csv
+*.npy
+*.npz
+
+# File huấn luyện, không cần khi chỉ deploy
+test.py
+mobilenetv2_training_plot.png
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Hệ thống
+.DS_Store
+.env
+.vscode/
+.idea/
