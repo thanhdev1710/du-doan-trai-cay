@@ -6,9 +6,9 @@ from torchvision.models import MobileNet_V2_Weights
 from PIL import Image
 
 # ==== Config ====
-MODEL_PATH = 'mobilenetv2_best.pth'
+MODEL_PATH = 'mobilenetv2_best_v2.pth'
 CLASS_NAMES_PATH = 'class_names.txt'
-INPUT_RESIZE = (96, 96)
+INPUT_RESIZE = (224, 224)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # ==== Load class names ====
@@ -33,10 +33,11 @@ def build_model(num_classes):
         param.requires_grad = False
     model.classifier = nn.Sequential(
         nn.Dropout(0.3),
-        nn.Linear(model.last_channel, 256),
+        nn.Linear(model.last_channel, 512), # Increased output features from 256 to 512
         nn.ReLU(),
+        nn.BatchNorm1d(512), # Added Batch Normalization for stability and better learning
         nn.Dropout(0.2),
-        nn.Linear(256, num_classes)
+        nn.Linear(512, num_classes)
     )
     return model
 

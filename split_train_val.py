@@ -30,9 +30,9 @@ for name in class_names:
     all_class_paths.append(image_paths)
 
 # Phân chia tỷ lệ
-train_ratio = 0.85
-valid_ratio = 0.10
-test_ratio  = 0.05
+train_ratio = 0.70
+valid_ratio = 0.20
+test_ratio  = 0.10
 
 # Duyệt qua từng class và chia ảnh
 for class_name, image_paths in zip(class_names, all_class_paths):

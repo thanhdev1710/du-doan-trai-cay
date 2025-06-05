@@ -3,6 +3,7 @@ data/
 dataset_original/
 *.jpg
 *.png
+*.rar
 
 # Notebook và các file tạm
 *.ipynb
