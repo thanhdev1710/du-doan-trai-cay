@@ -6,7 +6,7 @@ from torchvision.models import MobileNet_V2_Weights
 from PIL import Image
 
 # ==== Config ====
-MODEL_PATH = 'mobilenetv2_best_v2.pth'
+MODEL_PATH = 'mobilenetv2_best_v3.pth'
 CLASS_NAMES_PATH = 'class_names.txt'
 INPUT_RESIZE = (224, 224)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")

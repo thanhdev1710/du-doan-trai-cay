@@ -21,7 +21,7 @@ LEARNING_RATE = 1e-4
 WEIGHT_DECAY = 1e-5
 EARLY_STOPPING_PATIENCE = 4
 LR_SCHEDULER_PATIENCE = 2
-MODEL_PATH = 'mobilenetv2_best_v2.pth'
+MODEL_PATH = 'mobilenetv2_best_v3.pth'
 DATASET_DIR = 'data'
 TRAIN_DIR = os.path.join(DATASET_DIR, 'train')
 VAL_DIR = os.path.join(DATASET_DIR, 'valid')
@@ -296,7 +296,7 @@ def plot_history(history):
 
 
     plt.tight_layout(pad=3.0)
-    plot_filename = "mobilenetv2_training_plot_v2.png"
+    plot_filename = "mobilenetv2_training_plot_v3.png"
     plt.savefig(plot_filename)
     print(f"📊 Training plots saved to '{plot_filename}'")
     plt.show()

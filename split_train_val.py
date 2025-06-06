@@ -5,7 +5,7 @@ from tqdm import tqdm
 import shutil
 
 # Danh sách các class cần xử lý
-class_names = ['apple', 'banana', 'grape', 'mango', 'strawberry']
+class_names = ['unknown']
 
 # Thư mục chứa dữ liệu gốc
 image_base_path = "./dataset_original/train"
