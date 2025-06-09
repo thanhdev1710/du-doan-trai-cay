@@ -13,8 +13,10 @@ dataset_original/
 *.npz
 
 # File huấn luyện, không cần khi chỉ deploy
-test.py
-mobilenetv2_training_plot.png
+log/
+file_train/
+plot_training/
+
 
 # Cache Python
 __pycache__/
